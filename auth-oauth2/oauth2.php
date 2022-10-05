@@ -617,7 +617,7 @@ class GoogleEmailOauth2Provider extends GenericEmailOauth2Provider {
     static $urlOptions = [
         'responseType' => 'code',
         'access_type' => 'offline',
-        'prompt' => 'consent',
+        'prompt' => 'select_account',
         ];
 }
 
@@ -637,7 +637,7 @@ class MicrosoftEmailOauth2Provider extends GenericEmailOauth2Provider {
     static $urlOptions = [
         'tenant' => 'common',
         'accessType' => 'offline_access',
-        'prompt' => 'consent',
+        'prompt' => 'select_account',
         ];
 }
 ?>
